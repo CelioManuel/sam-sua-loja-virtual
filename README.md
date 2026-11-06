@@ -1,45 +1,46 @@
-# SAM Água - Loja Virtual de Água Mineral
+# SAM — Loja Virtual de Água Mineral
 
-Aplicação mobile-first de e-commerce para encomenda e entrega de água mineral em Maputo, Moçambique. Permite aos clientes encomendar água com entrega rápida, acompanhar pedidos em tempo real e pagar via M-Pesa, eMola, POS ou dinheiro.
+Aplicação de comércio electrónico orientada para telemóvel, concebida para facilitar encomendas e entregas de água mineral em Moçambique.
 
 ## Funcionalidades
 
-- **Catálogo de Produtos** — Água Namaacha, Fonte Fresca, Natura e mais
-- **Carrinho e Checkout** — Com seleção de endereço e método de pagamento
-- **Rastreamento em Tempo Real** — Acompanhe a entrega no mapa
-- **Painel Admin** — Gestão de produtos, operadores, lojas e promoções
-- **Painel Operador** — Gestão de entregas e stock
-- **Multi-idioma** — Português e Inglês
-- **Mobile** — Suporte a Android via Capacitor
+- Catálogo de produtos e marcas de água.
+- Carrinho, endereços, checkout e histórico de encomendas.
+- Métodos de pagamento preparados para integrações M-Pesa, eMola, POS e numerário.
+- Consulta do estado das entregas e visualização por mapa.
+- Áreas de cliente, operador e administração.
+- Interface responsiva e suporte a Android através do Capacitor.
 
 ## Tecnologias
 
-- React + TypeScript + Vite
-- Tailwind CSS + shadcn/ui
-- Framer Motion
-- Lovable Cloud (autenticação, base de dados, edge functions)
-- Capacitor (Android)
-- Google Maps API
+React, TypeScript, Vite, Tailwind CSS, Supabase e Capacitor, com integração cartográfica.
 
-## Desenvolvimento Local
+## Estrutura do projecto
 
-```sh
-git clone <YOUR_GIT_URL>
-cd <YOUR_PROJECT_NAME>
+- `src/` — componentes, páginas, estados e integrações da interface.
+- `supabase/` — funções e alterações da base de dados.
+- `android/` e `ios/` — integração nativa.
+- `public/` — recursos estáticos.
+
+## Desenvolvimento
+
+```bash
+git clone https://github.com/CelioManuel/sam-sua-loja-virtual.git
+cd sam-sua-loja-virtual
 npm install
 npm run dev
 ```
 
-> É necessária ligação à internet para os serviços de backend e Google Maps.
+Para gerar a versão web: `npm run build`. Para sincronizar os recursos Android após o build: `npx cap sync android`.
 
-## Build Android
+## Configuração
 
-```sh
-npm run build
-npx cap sync android
-npx cap run android
-```
+Esta aplicação utiliza serviços externos para autenticação, pagamentos e mapas. Configure as variáveis e chaves adequadas no respectivo ambiente, sem incluir credenciais privilegiadas no repositório. Não utilize chaves de produção nos testes.
 
-## Licença
+## Estado e âmbito
 
-Projeto privado — SAM.co.mz
+Código de desenvolvimento para demonstração técnica da arquitectura e dos fluxos de encomenda. Os testes de integração de pagamentos e as configurações do ambiente de produção não são cobertos por este README.
+
+## Propriedade intelectual
+
+O código é apresentado como projecto de desenvolvimento da plataforma SAM. Este repositório não declara uma licença de utilização pública; consulte as permissões aplicáveis antes de reutilizar código ou recursos de marca.
