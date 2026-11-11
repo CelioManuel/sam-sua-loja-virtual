@@ -44,3 +44,8 @@ Código de desenvolvimento para demonstração técnica da arquitectura e dos fl
 ## Propriedade intelectual
 
 O código é apresentado como projecto de desenvolvimento da plataforma SAM. Este repositório não declara uma licença de utilização pública; consulte as permissões aplicáveis antes de reutilizar código ou recursos de marca.
+
+
+## Portefólio técnico
+
+Leia o [estudo de caso do projecto](docs/ESTUDO_DE_CASO.md) para conhecer a arquitectura, as funcionalidades, as decisões técnicas e os aspectos ainda por validar.
